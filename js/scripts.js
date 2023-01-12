@@ -1,6 +1,6 @@
 window.onload = function() {
     const form = document.querySelector("form");
-    form.onsubmit = function(event) {
+    form.addEventListener("submit", function(event) {
       event.preventDefault();
   
       let vote = document.getElementById("voting");
@@ -16,5 +16,5 @@ window.onload = function() {
       else {
         under18Message.removeAttribute("class");
       }
-    };
+    });
   };
